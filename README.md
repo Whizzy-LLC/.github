@@ -13,6 +13,8 @@ git push -u origin dev-[feature or patch name]-[your name]
 开启 Pull Request
 ```
 
+**规则思路**
+
 1. 更新主分支
    - 确保你的本地主分支(通常是 main 或 master)是最新的
    - 执行 `git pull origin main`
