@@ -1,8 +1,21 @@
 # Pull Request (PR) 规则
 
+**TLDR;**
+
+```
+git checkout main
+git pull
+git checkout -b dev-[feature or patch name]-[your name]  
+git add [files ..]
+git commit -m "[feature] by [your name]: [changes]"
+git pull origin main --rebase  
+git push -u origin dev-[feature or patch name]-[your name]
+开启 Pull Request
+```
+
 1. 更新主分支
    - 确保你的本地主分支(通常是 main 或 master)是最新的
-   - 执行 `git pull origin main` 或 `git fetch` 和 `git merge origin/main`
+   - 执行 `git pull origin main`
 
 2. 创建新分支
    - 从更新后的主分支创建一个新的功能分支
@@ -22,6 +35,7 @@
 5. 更新分支
    - 再次从主分支拉取最新更改
    - 将你的功能分支与主分支进行 `rebase`
+   - `git pull origin main --rebase` 
 
 6. 推送到远程仓库
    - 将你的功能分支推送到远程仓库
